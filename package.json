@@ -1,1 +1,32 @@
-{\n  "name": "ai-chatbot-frontend",\n  "version": "1.0.0",\n  "private": true,\n  "scripts": {\n    "dev": "next dev",\n    "build": "next build",\n    "start": "next start"\n  },\n  "dependencies": {\n    "next": "^14.0.0",\n    "react": "^18.0.0",\n    "react-dom": "^18.0.0",\n    "tailwindcss": "^3.0.0",\n    "shadcn/ui": "^latest",\n    "react-query": "^latest",\n    "zustand": "^latest"\n  },\n  "devDependencies": {\n    "typescript": "^4.0.0"\n  }\n}
+{
+  "name": "ai-chatbot-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.59.16",
+    "clsx": "2.1.1",
+    "lucide-react": "0.460.0",
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-merge": "2.5.4",
+    "zustand": "4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.16.0",
+    "eslint-config-next": "16.0.6",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3"
+  }
+}
