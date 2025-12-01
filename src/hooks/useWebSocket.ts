@@ -86,8 +86,8 @@ export function useWebSocket() {
             // Heartbeat response
             break;
         }
-      } catch {
-        console.error('Failed to parse WebSocket message');
+      } catch (err) {
+        console.error('Failed to parse WebSocket message:', err);
       }
     };
 
@@ -156,7 +156,6 @@ export function useWebSocket() {
     wsRef.current.send(JSON.stringify({
       type: 'chat',
       payload: { message, conversationId, model },
-      conversationId,
     }));
   }, [isAuthenticatedWS, clearStreamingContent, setIsStreaming]);
 
